@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KaosSpaceInvaders</name>
+    </assembly>
+    <members>
+        <member name="T:SpaceInvaders.Entities.BossType">
+            <summary>
+            Tipo di boss
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.Boss">
+            <summary>
+            Singolo boss che ruota sul disco
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.Entities.Boss.CollidesWith(SpaceInvaders.Entity)">
+            <summary>
+            Override di CollidesWith per gestire coordinate pixel del boss vs coordinate gioco dei bullet
+            Assume bullet abbia coordinate 0-100 (gioco), boss abbia coordinate pixel (800x600)
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.BossFight">
+            <summary>
+            Sistema Boss Fight: 4 boss che ruotano su un disco, 20 secondi per eliminarli tutti
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.Entities.BossFight.IsReadyToRemove">
+            <summary>
+            Verifica se il boss fight è pronto per essere rimosso (completato + delay finito)
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.LaserWeapon">
+            <summary>
+            Arma laser che droppa dal SuperAlien.
+            Dura 8 secondi e permette di sparare laser potenti.
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.NuclearMissile">
+            <summary>
+            Missile nucleare che cade dal cielo e crea un fungo atomico radioattivo.
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.PacManChase">
+            <summary>
+            Pac-Man inseguito da un fantasmino che scende dallo schermo
+            Appare dopo aver ucciso un serpente
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.PowerUpType">
+            <summary>
+            Tipi di potenziamenti disponibili
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.PowerUp">
+            <summary>
+            Potenziamento che viene droppato dai nemici e raccoglibile dal giocatore
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.RadioactiveMushroom">
+            <summary>
+            Fungo atomico radioattivo creato dall'esplosione di un missile nucleare.
+            Emette radiazioni che danneggiano il giocatore se non ha lo scudo attivo.
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.Seagull">
+            <summary>
+            Gabbiano che svolazza casualmente sullo schermo
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Entities.SuperAlien">
+            <summary>
+            Super alieno creato dalla fusione di 2 nemici normali.
+            Si muove in modo erratico e droppa un'arma laser quando sconfitto.
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.Crater">
+            <summary>
+            Cratere creato dall'impatto di un asteroide
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.Crater.GetOpacity">
+            <summary>
+            Opacità del cratere che diminuisce nel tempo
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.CortanaChatUI">
+            <summary>
+            Chat UI in stile fumetto per parlare con Cortana
+            Risponde a domande su controlli, powerup, nemici, punteggio
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.GraphicsMode.GamePanel.DrawSmoke(System.Drawing.Graphics)">
+            <summary>
+            Disegna le particelle di fumo che escono dai crateri
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.GraphicsMode.GamePanel.DrawEnergyBar(System.Drawing.Graphics)">
+            <summary>
+            Disegna la barra energia dell'astronave
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.HighScoreNameDialog">
+            <summary>
+            Dialog per inserire il nome quando si raggiunge un punteggio alto
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.JoystickManager">
+            <summary>
+            Gestisce input da joystick/gamepad PC usando polling semplificato
+            Supporta controller Xbox, PlayStation e generici
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.LeaderboardDisplay">
+            <summary>
+            Visualizza la classifica punteggi con effetto coppa per record
+            Mostra top 10 con nome, punteggio, livello e data
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.MessageBar">
+            <summary>
+            Barra messaggi in basso tipo flipper - mostra messaggi brevi che scorrono
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.SaturnPlanet">
+            <summary>
+            Pianeta Saturno con anelli in alto a sinistra
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.GraphicsMode.YodaHelper">
+            <summary>
+            Maestro Yoda appare quando il giocatore ha solo 1 vita e regala una vita extra
+            </summary>
+        </member>
+        <member name="T:SpaceInvaders.SmokeParticle">
+            <summary>
+            Particella di fumo che sale dal cratere
+            </summary>
+        </member>
+        <member name="M:SpaceInvaders.SmokeParticle.GetOpacity">
+            <summary>
+            Opacità della particella che diminuisce nel tempo
+            </summary>
+        </member>
+        <member name="T:SpaceInvadersCS.Graphics.WeatherSystem">
+            <summary>
+            Sistema meteorologico dinamico con fulmini, pioggia, sole, vento e arcobaleno
+            </summary>
+        </member>
+    </members>
+</doc>
